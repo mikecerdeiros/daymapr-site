@@ -85,14 +85,11 @@ a {
 }
 
 .brand-mark {
-  display: grid;
   width: 36px;
   height: 36px;
-  place-items: center;
-  background: linear-gradient(135deg, var(--pink), var(--purple));
-  border-radius: 12px;
-  color: #fff;
-  box-shadow: 0 0 22px rgba(255, 62, 168, 0.35);
+  border-radius: 9px;
+  object-fit: cover;
+  box-shadow: 0 0 22px rgba(255, 138, 31, 0.28), 0 0 18px rgba(155, 99, 255, 0.2);
 }
 
 .nav-links {
