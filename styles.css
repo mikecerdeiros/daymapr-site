@@ -304,6 +304,7 @@ h3 {
 .flow-section,
 .feature-marquee,
 .focus-section,
+.explore-section,
 .download-section {
   position: relative;
   overflow: hidden;
@@ -518,6 +519,59 @@ h3 {
   right: 4%;
   top: 142px;
   rotate: 7deg;
+}
+
+.explore-section {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(40, 240, 223, 0.12), transparent 26rem),
+    radial-gradient(circle at 82% 42%, rgba(255, 62, 168, 0.13), transparent 28rem),
+    linear-gradient(180deg, #080512, #0d0820);
+}
+
+.explore-copy {
+  max-width: 780px;
+  margin-bottom: 38px;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.explore-card {
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  background:
+    linear-gradient(145deg, rgba(33, 22, 61, 0.78), rgba(18, 10, 42, 0.92)),
+    radial-gradient(circle at 100% 0%, rgba(40, 240, 223, 0.16), transparent 14rem);
+  box-shadow: 0 24px 62px rgba(0, 0, 0, 0.28);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.explore-card:hover {
+  border-color: rgba(40, 240, 223, 0.36);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34), 0 0 34px rgba(40, 240, 223, 0.08);
+  transform: translateY(-3px);
+}
+
+.explore-card span {
+  display: inline-flex;
+  margin-bottom: 38px;
+  color: var(--cyan);
+  font-weight: 950;
+}
+
+.explore-card h3 {
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+}
+
+.explore-card p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .download-section {
@@ -871,6 +925,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .flow-card {
     min-height: auto;
   }
@@ -960,6 +1018,7 @@ h3 {
   .flow-section,
   .feature-marquee,
   .focus-section,
+  .explore-section,
   .download-section,
   .keyword-hero,
   .keyword-proof,
@@ -1044,6 +1103,16 @@ h3 {
   }
 
   .flow-card {
+    border-radius: 24px;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-card {
+    min-height: 190px;
+    padding: 22px;
     border-radius: 24px;
   }
 
